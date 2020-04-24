@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+
+}
+
+/* HEADER========================================================= */
+.header {}
+
+.logo {
+    margin-top: 40px;
+    text-decoration: none;
+    color: #555252;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #1abc9c;
+    font-family: "Roboto";
+    font-weight: 700;
+    float: left;
+}
+
+.logo-latter {
+    color: #5a5757;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+/* NAV---------------------------- */
+
+.nav li {
+    margin: 0;
+    padding: 0;
+    margin-top: 45px;
+    list-style-type: none;
+    margin-right: 34px;
+    float: right;
+}
+
+.nav-link {
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.link-item {
+    /* margin-top: 10px; */
+    color: #0f0101;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+li:first-child {
+    margin-right: 0;
+}
+
+.link-item:hover {
+    color: #1abc9c;
+    cursor: pointer;
+}
+
+
+/* SLIDER ------------------------------------------------------------ */
+
+.slider {
+    position: relative;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-top: 120px;
+}
+
+.slider-text {
+
+    width: 738px;
+    height: 98px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -1.2px;
+    line-height: 82px;
+}
+
+.title-slider {
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    transform: translateX(-50%);
+
+}
+
+.title-word {}
+
+.title-word:hover {
+    color: #ff7200;
+}
+
+
+.descript-text {
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -0.48px;
+    line-height: 54px;
+}
