@@ -1,142 +1,168 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    font-family: "Open Sans", sans-serif;
-    position: relative;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
+html {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.clearfix::after {
-    display: table;
-    content: "";
-    clear: both;
+/* header______________________________________________________________________________________________________- */
+
+.header {
+  padding-top: 38px;
 }
 
 .container {
-    width: 1100px;
-    margin: 0 auto;
-
+  width: 1110px;
+  margin: 0 auto;
 }
 
-/* HEADER========================================================= */
-.header {}
+.navigation {
+  padding-bottom: 54px;
+}
 
 .logo {
-    margin-top: 40px;
-    text-decoration: none;
-    color: #555252;
-    font-family: "Roboto";
-    font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #1abc9c;
-    font-family: "Roboto";
-    font-weight: 700;
-    float: left;
+  color: #555252;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+  float: left;
 }
 
-.logo-latter {
-    color: #5a5757;
-    font-family: "Roboto";
-    font-weight: 400;
+.logo-letter {
+  color: #1abc9c;
 }
 
-/* NAV---------------------------- */
-
-.nav li {
-    margin: 0;
-    padding: 0;
-    margin-top: 45px;
-    list-style-type: none;
-    margin-right: 34px;
-    float: right;
+.navigation__list {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 11px;
+  text-transform: uppercase;
+  padding-top: 6px;
+  float: right;
 }
 
-.nav-link {
-    margin-top: 15px;
-    text-decoration: none;
+.navigation__list-item {
+  float: left;
 }
 
-.link-item {
-    /* margin-top: 10px; */
-    color: #0f0101;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 700;
-    text-decoration: none;
+.navigation__list-item:not(:last-child) {
+  margin-right: 32px;
 }
 
-li:first-child {
-    margin-right: 0;
+.navigation__list-link {
+  color: #000000;
+}
+.navigation__list-link:hover {
+  color: #20d6b2;
 }
 
-.link-item:hover {
-    color: #1abc9c;
-    cursor: pointer;
-}
-
-
-/* SLIDER ------------------------------------------------------------ */
+/* Slider_______________________________________________________________________- */
 
 .slider {
-    position: relative;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin-top: 120px;
+  background-size: cover;
+  position: relative;
+}
+.slider-btn {
+  position: absolute;
+  display: inline-block;
+  border: none;
+  width: 90px;
+  height: 90px;
+  background-color: #4ec6ab;
+  opacity: 0.65;
 }
 
-.slider-text {
-
-    width: 738px;
-    height: 98px;
-    color: #ffffff;
-    font-family: "Roboto";
-    font-size: 40px;
-    font-weight: 400;
-    letter-spacing: -1.2px;
-    line-height: 82px;
+.btn-left {
+  margin-left: 150px;
+  left: 0;
+  transform: translateY(-90%);
 }
 
-.title-slider {
-    position: absolute;
-    left: 50%;
-    top: 300px;
-    transform: translateX(-50%);
-
+.btn-rigth {
+  margin-right: 150px;
+  right: 0;
+  transform: translateY(-90%);
 }
 
-.title-word {}
-
-.title-word:hover {
-    color: #ff7200;
+.img-wrapper {
+  position: relative;
+  z-index: 1;
 }
 
+.img-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0, 0.5);
+  z-index: 2;
+}
 
-.descript-text {
-    position: absolute;
-    left: 50%;
-    top: 400px;
-    transform: translateX(-50%);
-    color: #ffffff;
-    font-family: "Roboto";
-    font-size: 24px;
-    font-weight: 300;
-    letter-spacing: -0.48px;
-    line-height: 54px;
+.slider-img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.slider-wrapper {
+  position: absolute;
+  bottom: 320px;
+  text-align: center;
+  margin: auto;
+  top: 150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.slider__title {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+  line-height: 82px;
+}
+
+.slider__description {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-right: 250px;
+}
+
+.slider-letter:hover {
+  color: #ff7200;
 }
