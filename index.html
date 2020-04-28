@@ -14,6 +14,7 @@
     />
     <title>module-05</title>
   </head>
+
   <body>
     <header class="header">
       <div class="container">
@@ -63,24 +64,125 @@
         </div>
       </div>
     </header>
+
     <main class="clothes">
       <div class="container">
         <h2 class="clothes-title">NEW COLLECTION</h2>
-        <ul class="clothes__card clearfix">
-          <li class="clothes__list-item"><a href="#" class="clothes__list-link">
-            <img src="./img/Blue_Tshirt.jpg" alt="Blue_Tshirt" width="255" height="322" class="clothes__list-img">Blue Tshirt 
-            <span class="price">$21</span> </a></li>
-          <li class="clothes__list-item"><a href="#" class="clothes__list-link">
-            <img src="./img/women-short.jpg" alt="women-short" width="255" height="322" class="clothes__list-img">WOMAN shirt
-            <span class="price">$21</span></a></li>
-          <li class="clothes__list-item"><a href="#" class="clothes__list-link">
-            <img src="./img/YELLOW_Tshirt.jpg" alt="YELLOW_Tshirt" width="255" height="322" class="clothes__list-img">YELLOW Tshirt
-            <span class="price">$21</span></a></li>
-          <li class="clothes__list-item"><a href="#" class="clothes__list-link">
-            <img src="./img/cool.jpg" alt="cool" width="255" height="322" class="clothes__list-img">Cool lingerie
-            <span class="price">$21</span></a></li>
-          
+        <div class="clothes-card clearfix">
+          <div class="overlay">
+            <ul class="overlay-list">
+              <li>
+                <img
+                  src="./img/icon/heart.png"
+                  alt="heart"
+                  class="icon-heart"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/icon/arrows.png"
+                  alt="arrows"
+                  class="icon-arrows"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/icon/clock.png"
+                  alt="clock"
+                  class="icon-clock"
+                />
+              </li>
+            </ul>
+
+            <div icon-box>
+              <button class="btn">
+                <img
+                  src="./img/icon/basket.png"
+                  alt="basket"
+                  class="icon-basket"
+                />
+                <p class="btn-text">add to cart</p>
+              </button>
+            </div>
+          </div>
+          <figure class="card">
+            <a href="#" class="card-link">
+              <img
+                src="./img/Blue_Tshirt.jpg"
+                width="255"
+                height="322"
+                alt="heels"
+                class="card-img"
+              />
+            </a>
+            <figcaption class="card-bg">
+              <a href="#" class="link-item">
+                <span class="card-title">Blue Tshirt</span
+                ><span class="price-card">$79</span>
+              </a>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <a href="#" class="card-link">
+              <img
+                src="./img/women-short.jpg"
+                width="255"
+                height="322"
+                alt="women-short"
+                class="card-img"
+              />
+            </a>
+            <figcaption class="card-bg">
+              <a href="#" class="link-item">
+                <span class="card-title">WOMAN shirt</span
+                ><span class="price-card">$19</span>
+              </a>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <a href="#" class="card-link">
+              <img
+                src="./img/YELLOW_Tshirt.jpg"
+                width="255"
+                height="322"
+                alt="YELLOW Tshirt"
+                class="card-img"
+              />
+            </a>
+            <figcaption class="card-bg">
+              <a href="#" class="link-item">
+                <span class="card-title">YELLOW Tshirt</span
+                ><span class="price-card">$14</span>
+              </a>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <a href="#" class="card-link">
+              <img
+                src="./img/cool.jpg"
+                width="255"
+                height="322"
+                alt="Cool lingerie"
+                class="card-img"
+              />
+            </a>
+            <figcaption class="card-bg">
+              <a href="#" class="link-item clerafix">
+                <span class="card-title">Cool lingerie</span
+                ><span class="price-card">$16</span>
+              </a>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </main>
+    <footer>
+      <div class="footer">
+        <p class="first-descript">
+          All Rights Reserved © Dokan | Designed
+          <a href="#" class="footer-link">ThemenGraph</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

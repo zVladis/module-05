@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-family: "Roboto";
 }
 
 html {
@@ -198,15 +199,164 @@ a {
 .clothes {
   background-color: #e9f0fd;
 }
-.clothes__card {
-}
 
-.clothes__list-item {
+.card {
+  margin-right: 30px;
+  margin-bottom: 100px;
   float: left;
 }
-,
-.clothes__list-link:not(:last-child) {
+
+.card:last-child {
+  margin: 0;
+}
+.card:hover .card-bg {
+  background-color: rgba(14, 156, 144, 0.7);
 }
 
-.clothes__list-link {
+.card-link {
+}
+
+.card-img {
+  display: block;
+}
+
+.card-bg {
+  width: 255px;
+  height: 40px;
+  background-color: #323232;
+}
+.link-item {
+  display: block;
+}
+.card-title {
+  display: inline-block;
+  margin-left: 12px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+
+.price-card {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.5);
+  float: right;
+  padding: 4.5px 8px;
+}
+/* ICONS++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.overlay {
+  width: 255px;
+  height: 322px;
+  border: 10px solid #ffffff;
+  background-color: #000000;
+  opacity: 0.55;
+}
+
+.overlay-list {
+  margin-top: 78px;
+  margin-left: 35px;
+}
+
+.icon-heart {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  float: left;
+  margin-right: 9px;
+  padding: 13px 11px;
+}
+.icon-arrows {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #1abc9c;
+  background-color: #1abc9c;
+  float: left;
+  margin-right: 9px;
+  padding: 15px 12px;
+}
+
+.icon-clock {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  float: left;
+  padding: 12px 12px;
+  margin-right: 20px;
+}
+
+.icon-basket {
+  display: inline;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 12px;
+  margin-bottom: 8px;
+}
+
+.icon-box {
+  width: 166px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  background-color: #323232;
+}
+
+.btn-text {
+  display: inline;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: uppercase;
+  vertical-align: text-bottom;
+  margin-right: 17px;
+  margin-bottom: 8px;
+}
+
+.btn {
+  width: 168px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  background-color: #323232;
+  margin-top: 7px;
+  margin-left: 35px;
+}
+/* Footer+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.footer {
+  width: 100%;
+  height: 88px;
+  background-color: #323232;
+  text-align: center;
+  padding-top: 28px;
+}
+
+.first-descript {
+  color: #fefefe;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.footer-link {
+  display: inline-block;
+  color: #46bfa9;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
 }
