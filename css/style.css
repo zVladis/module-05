@@ -120,13 +120,11 @@ a {
 
 .btn-left {
   background-image: url("../img/left.png");
-  margin-left: 120px;
   left: 0;
 }
 
 .btn-rigth {
   background-image: url("../img/rigth.png");
-  margin-right: 120px;
   right: 0;
 }
 
