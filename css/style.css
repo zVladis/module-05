@@ -155,7 +155,7 @@ a {
   bottom: 320px;
   text-align: center;
   margin: auto;
-  top: 150px;
+  top: 40%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -240,8 +240,7 @@ a {
   background-color: rgba(14, 156, 144, 0.7);
 }
 
-.card-link {
-}
+.card-link {}
 
 .card-img {
   display: block;
